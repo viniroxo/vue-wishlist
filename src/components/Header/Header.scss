@@ -6,15 +6,37 @@ header {
   padding: 24px 64px;
   color: white;
 
+  @media (max-width: 768px) {
+    padding: 24px 32px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 24px 16px;
+  }
+
   .actions {
     display: flex;
     align-items: center;
     gap: 64px;
 
+    @media (max-width: 768px) {
+      gap: 32px;
+    }
+
+    @media (max-width: 480px) {
+      gap: 16px;
+    }
+
     .wishlist-button {
       display: flex;
       align-items: center;
       gap: 4px;
+      padding: 8px;
+
+      &:hover {
+        border-radius: 8px;
+        background-color: rgba(0, 0, 0, 0.2);
+      }
     }
   }
 }

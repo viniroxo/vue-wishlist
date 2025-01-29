@@ -1,0 +1,21 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 24px;
+  color: $primary-color;
+
+  .breadcrumb-item {
+    cursor: pointer;
+  }
+}
+
+hr {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.2); /* Altere a cor e espessura */
+  margin: 20px 0;
+}
+
+.active {
+  font-weight: bold;
+}
