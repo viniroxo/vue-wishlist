@@ -8,5 +8,21 @@ body {
 }
 
 .page {
-  padding: 64px 256px;
+  padding: 64px 128px;
+
+  @media (max-width: 1536px) {
+    padding: 64px 128px;
+  }
+
+  @media (max-width: 1200px) {
+    padding: 64px 64px;
+  }
+
+  @media (max-width: 900px) {
+    padding: 64px 32px;
+  }
+
+  @media (max-width: 600px) {
+    padding: 64px 16px;
+  }
 }
