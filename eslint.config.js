@@ -21,6 +21,7 @@ export default [
       vue,
       '@typescript-eslint': typescriptPlugin,
     },
+    extends: ['eslint:recommended', 'plugin:vue/recommended'],
     rules: {
       'vue/multi-word-component-names': 'off',
       '@typescript-eslint/no-unused-vars': 'warn',

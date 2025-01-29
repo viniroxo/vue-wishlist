@@ -1,11 +1,8 @@
 <template>
-  <div>
-    <h1>HOME</h1>
-  </div>
+  <Header />
+  <router-view />
 </template>
 
-<script setup lang="ts">
+<script setup>
+import Header from './components/Header/Header.vue';
 </script>
-
-<style scoped>
-</style>

@@ -1,0 +1,20 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: $primary-color;
+  padding: 24px 64px;
+  color: white;
+
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+
+    .wishlist-button {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+  }
+}
