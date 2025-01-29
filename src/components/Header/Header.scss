@@ -6,25 +6,37 @@ header {
   padding: 24px 64px;
   color: white;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1536px) {
+    padding: 24px 64px;
+  }
+
+  @media (max-width: 1200px) {
+    padding: 24px 64px;
+  }
+
+  @media (max-width: 900px) {
     padding: 24px 32px;
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 600px) {
     padding: 24px 16px;
+  }
+
+  .logo {
+    cursor: pointer;
   }
 
   .actions {
     display: flex;
     align-items: center;
-    gap: 64px;
 
-    @media (max-width: 768px) {
-      gap: 32px;
-    }
-
-    @media (max-width: 480px) {
-      gap: 16px;
+    .profile {
+      padding: 8px;
+      &:hover {
+        cursor: pointer;
+        border-radius: 8px;
+        background-color: rgba(0, 0, 0, 0.2);
+      }
     }
 
     .wishlist-button {
@@ -34,6 +46,7 @@ header {
       padding: 8px;
 
       &:hover {
+        cursor: pointer;
         border-radius: 8px;
         background-color: rgba(0, 0, 0, 0.2);
       }

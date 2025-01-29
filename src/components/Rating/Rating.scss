@@ -1,0 +1,17 @@
+.rating {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+
+  .stars {
+    display: flex;
+    gap: 1;
+  }
+
+  span {
+    color: $black;
+    font-size: 14px;
+  }
+}

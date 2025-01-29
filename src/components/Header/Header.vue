@@ -1,12 +1,12 @@
 <template>
   <header>
-    <img :src="logo" alt="Logo da Empresa" />
+    <img :src="logo" alt="Netshoes logo" class="logo" @click="navigateToHome" />
     <div class="actions">
       <div class="wishlist-button" v-on:click="navigateToWishlist">
         <Heart />
         <span>Wishlist</span>
       </div>
-      <CircleUserRound v-on:click="setOpenOptions" />
+      <CircleUserRound v-on:click="setOpenOptions" class="profile" />
       <Popover :open="isOpenOptions" />
     </div>
   </header>
@@ -30,5 +30,9 @@ const router = useRouter();
 
 const navigateToWishlist = () => {
   router.push('/wishlist');
+};
+
+const navigateToHome = () => {
+  router.push('/');
 };
 </script>

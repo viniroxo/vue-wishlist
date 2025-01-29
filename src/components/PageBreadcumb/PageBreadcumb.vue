@@ -16,21 +16,22 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import './PageBreadcumb.scss';
 import { defineProps } from 'vue';
 import { useRouter } from 'vue-router';
+import type { BreadcrumbItem } from '../../interfaces';
 
-const props = defineProps({
+defineProps({
   items: {
-    type: Array,
+    type: Array as () => BreadcrumbItem[],
     required: true,
   },
 });
 
 const router = useRouter();
 
-const navigateTo = (path) => {
+const navigateTo = (path: string) => {
   if (path) router.push(path);
 };
 </script>
