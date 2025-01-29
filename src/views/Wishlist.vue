@@ -1,5 +1,12 @@
 <template>
-  <div>WISHLIST</div>
+  <PageBreadcumb
+    :items="[
+      { text: 'Home', path: '/' },
+      { text: 'Wishlist', path: '/wishlist' },
+    ]"
+  />
 </template>
 
-<script setup></script>
+<script setup>
+import PageBreadcumb from '../components/PageBreadcumb/PageBreadcumb.vue';
+</script>

@@ -1,5 +1,7 @@
 <template>
-  <div>HOME</div>
+  <PageBreadcumb :items="[{ text: 'Home', path: '/' }]" />
 </template>
 
-<script setup></script>
+<script setup>
+import PageBreadcumb from '../components/PageBreadcumb/PageBreadcumb.vue';
+</script>
