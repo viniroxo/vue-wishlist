@@ -1,5 +1,38 @@
-# Vue 3 + TypeScript + Vite
+# Vue Wishlist - Netshoes
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Este projeto é um front-end desenvolvido em Vue.js com TypeScript e Vite, permitindo que os usuários visualizem uma lista de produtos e adicionem/removam itens de uma wishlist (lista de desejos).
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+## Stack utilizada
+
+**Front-end:** Vue, Typescript, Vite e Pinia
+
+## Instalação e Execução
+
+### Pré-requisitos
+
+Antes de começar, certifique-se de ter instalado:
+
+- **Node.js** (versão recomendada: v22.13.1 (LTS))
+- **npm** (gerenciador de pacotes do Node.js)
+
+### Passos para rodar o projeto
+
+1️⃣ **Instale as dependências**
+
+```bash
+  npm install
+```
+
+2️⃣ **Execute o projeto**
+
+```bash
+  npm run dev
+```
+
+## Rodando os testes
+
+Para rodar os testes, rode o seguinte comando
+
+```bash
+  npm run test
+```
