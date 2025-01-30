@@ -12,6 +12,7 @@
       :product="product"
     />
   </div>
+  <EmptyList v-if="wishlist.length === 0" />
 </template>
 
 <script setup lang="ts">
@@ -20,6 +21,7 @@ import PageBreadcumb from '../../components/PageBreadcumb/PageBreadcumb.vue';
 import CardProduct from '../../components/CardProduct/CardProduct.vue';
 import { computed, onMounted } from 'vue';
 import { useProductStore } from '../../stores/productStore';
+import EmptyList from '../../components/EmptyList/EmptyList.vue';
 
 const productStore = useProductStore();
 
