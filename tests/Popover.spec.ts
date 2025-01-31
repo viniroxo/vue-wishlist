@@ -10,7 +10,6 @@ describe('Popover', () => {
       },
     });
 
-    // Verifica se o popover foi renderizado
     expect(wrapper.find('.popover').exists()).toBe(true);
   });
 
@@ -21,7 +20,6 @@ describe('Popover', () => {
       },
     });
 
-    // Verifica se o popover não foi renderizado
     expect(wrapper.find('.popover').exists()).toBe(false);
   });
 
@@ -32,7 +30,6 @@ describe('Popover', () => {
       },
     });
 
-    // Verifica se as opções estão corretas
     const options = wrapper.findAll('.popover-options span');
     expect(options.length).toBe(4);
     expect(options[0].text()).toBe('Entrar');

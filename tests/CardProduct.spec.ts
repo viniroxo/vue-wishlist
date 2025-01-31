@@ -15,7 +15,6 @@ describe('CardProduct', () => {
 
     productStore = useProductStore();
     productStore.toggleWishlist = vi.fn((code: string) => {
-      // Simula a lógica de adicionar/remover da lista de desejos
       if (productStore.wishlist.includes(code)) {
         productStore.wishlist = productStore.wishlist.filter(
           (item) => item !== code,
@@ -56,10 +55,8 @@ describe('CardProduct', () => {
       },
     });
 
-    // Simula o clique no botão de coração
     await wrapper.find('.add-wishlist').trigger('click');
 
-    // Verifica se o produto foi adicionado à lista de desejos
     expect(productStore.wishlist).toContain(product.code);
     expect(wrapper.vm.isInWishlist).toBe(true);
   });
@@ -76,13 +73,10 @@ describe('CardProduct', () => {
       },
     });
 
-    // Adiciona o produto à lista de desejos
     productStore.wishlist.push(product.code);
 
-    // Simula o clique no botão de coração para remover o produto
     await wrapper.find('.add-wishlist').trigger('click');
 
-    // Verifica se o produto foi removido da lista de desejos
     expect(productStore.wishlist).not.toContain(product.code);
     expect(wrapper.vm.isInWishlist).toBe(false);
   });
